@@ -56,7 +56,7 @@ body {
 
     padding: 10px 60px;
 
-    background: rgba(8, 18, 38, 0.96);
+    background: rgba(8, 18, 38, 0.82);
     backdrop-filter: blur(10px);
 
     border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -69,7 +69,7 @@ body {
 }
 
 .logo {
-    height: 110px;
+    height: 92px;
     width: auto;
     object-fit: contain;
 }
@@ -114,12 +114,21 @@ body {
     background: #2563eb;
 }
 
+/* SECTION SEPARATORS */
+
+.features,
+.workflow,
+.screenshots-section,
+.pilot {
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+
 /* HERO */
 
 .hero {
     padding: 70px 20px 70px;
     text-align: center;
-    max-width: 1120px;
+    max-width: 980px;
     margin: auto;
 }
 
@@ -141,7 +150,7 @@ body {
 .subtitle {
     color: #a8bad6;
     font-size: clamp(18px, 2vw, 24px);
-    max-width: 920px;
+    max-width: 780px;
     margin: auto;
 }
 
@@ -151,6 +160,7 @@ body {
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 /* BUTTONS */
@@ -169,6 +179,21 @@ body {
 .primary {
     background: linear-gradient(90deg, #2563eb, #9333ea);
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.22), transparent 70%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.primary:hover::before {
+    opacity: 1;
 }
 
 .primary:hover {
@@ -201,12 +226,13 @@ body {
     border-radius: 22px;
     border: 1px solid rgba(255,255,255,0.06);
     transition: 0.2s;
-    min-height: 250px;
+    min-height: 290px;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(59,130,246,0.35);
+    transform: translateY(-8px);
+    border-color: rgba(59,130,246,0.45);
+    box-shadow: 0 20px 50px rgba(37,99,235,0.12);
 }
 
 .card h3 {
@@ -223,7 +249,7 @@ body {
 /* SCREENSHOTS */
 
 .screenshots-section {
-    padding: 80px 40px;
+    padding: 120px 40px;
 }
 
 .section-title {
@@ -261,6 +287,11 @@ body {
     width: 100%;
     display: block;
     background: #0f172a;
+    transition: 0.3s ease;
+}
+
+.shot:hover img {
+    transform: scale(1.015);
 }
 
 .shot-content {
@@ -280,7 +311,7 @@ body {
 /* WORKFLOW */
 
 .workflow {
-    padding: 90px 40px;
+    padding: 120px 40px;
     text-align: center;
     max-width: 1400px;
     margin: auto;
@@ -330,7 +361,7 @@ body {
 /* PILOT */
 
 .pilot {
-    padding: 90px 20px 120px;
+    padding: 120px 20px 140px;
     max-width: 1050px;
     margin: auto;
     text-align: center;
@@ -385,7 +416,7 @@ body {
     }
 
     .logo {
-        height: 90px;
+        height: 80px;
     }
 }
 
