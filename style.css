@@ -25,13 +25,14 @@ body {
     padding: 20px 60px;
 
     background: rgba(8, 18, 38, 0.95);
+
     backdrop-filter: blur(10px);
 
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .logo {
-    height: 60px;
+    height: 65px;
     object-fit: contain;
 }
 
@@ -54,7 +55,7 @@ body {
 
 .language-toggle {
     position: fixed;
-    top: 95px;
+    top: 100px;
     right: 20px;
     z-index: 2000;
 
@@ -65,9 +66,11 @@ body {
 .language-toggle button {
     background: #172338;
     color: white;
+
     border: 1px solid #334155;
 
     padding: 10px 14px;
+
     border-radius: 10px;
 
     cursor: pointer;
@@ -83,29 +86,37 @@ body {
 /* HERO */
 
 .hero {
-    padding: 140px 20px 120px;
+    padding: 150px 20px 120px;
     text-align: center;
+
     max-width: 1100px;
     margin: auto;
 }
 
 .eyebrow {
     color: #3b82f6;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
     text-transform: uppercase;
+
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: 72px;
     line-height: 1.1;
+
     margin-bottom: 30px;
 }
 
 .subtitle {
     color: #94a3b8;
+
     font-size: 22px;
+
     max-width: 900px;
     margin: auto;
 }
@@ -115,6 +126,7 @@ body {
 
     display: flex;
     justify-content: center;
+
     gap: 16px;
     flex-wrap: wrap;
 }
@@ -123,6 +135,7 @@ body {
 
 .button {
     padding: 15px 28px;
+
     border-radius: 12px;
 
     text-decoration: none;
@@ -153,6 +166,7 @@ body {
 
 .features {
     display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 
     gap: 24px;
@@ -167,6 +181,7 @@ body {
     background: #172338;
 
     padding: 35px;
+
     border-radius: 22px;
 
     border: 1px solid rgba(255,255,255,0.04);
@@ -187,10 +202,73 @@ body {
     color: #cbd5e1;
 }
 
+/* SCREENSHOTS */
+
+.screenshots-section {
+    padding: 120px 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+}
+
+.screenshots-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
+    gap: 30px;
+
+    max-width: 1400px;
+    margin: auto;
+}
+
+.shot {
+    background: #172338;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    transition: 0.2s;
+}
+
+.shot:hover {
+    transform: translateY(-5px);
+}
+
+.shot img {
+    width: 100%;
+    display: block;
+
+    background: #0f172a;
+}
+
+.shot-content {
+    padding: 30px;
+}
+
+.shot-content h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.shot-content p {
+    color: #cbd5e1;
+}
+
 /* WORKFLOW */
 
 .workflow {
     padding: 120px 20px;
+
     text-align: center;
 
     max-width: 1300px;
@@ -204,7 +282,9 @@ body {
 
 .steps {
     display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
     gap: 24px;
 }
 
@@ -212,6 +292,7 @@ body {
     background: #172338;
 
     padding: 35px;
+
     border-radius: 22px;
 
     border: 1px solid rgba(255,255,255,0.04);
@@ -222,6 +303,7 @@ body {
     height: 45px;
 
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 
@@ -265,12 +347,14 @@ body {
     border-top: 1px solid rgba(255,255,255,0.05);
 
     margin-top: 120px;
+
     padding: 40px 20px;
 
     text-align: center;
 
     display: flex;
     flex-direction: column;
+
     gap: 12px;
 }
 
@@ -303,11 +387,13 @@ body {
     }
 
     .workflow h2,
-    .pilot h2 {
+    .pilot h2,
+    .section-title h2 {
         font-size: 36px;
     }
 
-    .features {
+    .features,
+    .screenshots-section {
         padding: 20px;
     }
 
