@@ -137,3 +137,8 @@ button:disabled { opacity: .6; cursor: not-allowed; }
   .modal-actions { justify-content: stretch; }
   .modal-actions .button { width: 100%; }
 }
+
+
+/* Native dialog safety */
+.pilot-dialog:not([open]) { display: none; }
+.pilot-dialog[open] { display: block; }
