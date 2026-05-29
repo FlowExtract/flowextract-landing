@@ -1,332 +1,242 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FlowExtract</title>
-    <meta name="description" content="FlowExtract omdanner kundehenvendelser til strukturerede sager, som dit team kan gennemgå, godkende og behandle." />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowExtract</title>
+  <meta name="description" content="FlowExtract omdanner kundehenvendelser til strukturerede sager, som dit team kan gennemgå, godkende og behandle." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="bg-glow glow-1"></div>
-<div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
 
-<header class="site-header">
+  <header class="site-header">
     <a href="#top" class="logo-wrapper" aria-label="FlowExtract home">
-        <img src="FX logo with name.png" alt="FlowExtract Logo" class="logo" />
+      <img src="FX logo with name.png" alt="FlowExtract" class="logo" />
     </a>
 
     <nav class="nav-links" aria-label="Main navigation">
-        <a href="#problem" data-en="Problem" data-da="Problem">Problem</a>
-        <a href="#features" data-en="Features" data-da="Funktioner">Funktioner</a>
-        <a href="#screenshots" data-en="Platform" data-da="Platform">Platform</a>
-        <a href="#workflow" data-en="How it works" data-da="Hvordan det virker">Hvordan det virker</a>
-        <a href="#pilot" data-en="Pilot" data-da="Pilot">Pilot</a>
-        <a href="mailto:contact@flowextract.dk" data-en="Contact" data-da="Kontakt">Kontakt</a>
-        <div class="language-toggle" aria-label="Language selector">
-            <button type="button" onclick="setLanguage('en')">EN</button>
-            <button type="button" onclick="setLanguage('da')">DA</button>
-        </div>
+      <a href="#problem" data-da="Problem" data-en="Problem">Problem</a>
+      <a href="#features" data-da="Funktioner" data-en="Features">Funktioner</a>
+      <a href="#screenshots" data-da="Platform" data-en="Platform">Platform</a>
+      <a href="#workflow" data-da="Hvordan det virker" data-en="How it works">Hvordan det virker</a>
+      <a href="#pilot" data-da="Pilot" data-en="Pilot">Pilot</a>
+      <a href="mailto:contact@flowextract.dk" data-da="Kontakt" data-en="Contact">Kontakt</a>
+      <div class="language-toggle" aria-label="Language selector">
+        <button type="button" data-lang-btn="en">EN</button>
+        <button type="button" data-lang-btn="da">DA</button>
+      </div>
     </nav>
-</header>
+  </header>
 
-<main id="top">
-    <section class="hero">
-        <p class="eyebrow"
-           data-en="Operational workflow automation for SMBs"
-           data-da="Workflowautomatisering til danske virksomheder">
-            Workflowautomatisering til danske virksomheder
-        </p>
+  <main id="top">
+    <section class="hero section-shell">
+      <p class="eyebrow" data-da="Workflowautomatisering til danske virksomheder" data-en="Workflow automation for SMBs">Workflowautomatisering til danske virksomheder</p>
+      <h1 data-da="Stop med at behandle kunde-mails manuelt." data-en="Stop processing customer emails manually.">Stop med at behandle kunde-mails manuelt.</h1>
+      <p class="subtitle" data-da="FlowExtract omdanner e-mails, formularer, chatbeskeder og sociale henvendelser til strukturerede sager, som dit team kan gennemgå, godkende og behandle." data-en="FlowExtract converts emails, forms, chat messages and social requests into structured cases your team can review, approve and process.">FlowExtract omdanner e-mails, formularer, chatbeskeder og sociale henvendelser til strukturerede sager, som dit team kan gennemgå, godkende og behandle.</p>
 
-        <h1 data-en="Stop processing customer emails manually."
-            data-da="Stop med at behandle kunde-mails manuelt.">
-            Stop med at behandle kunde-mails manuelt.
-        </h1>
+      <div class="hero-badges">
+        <span data-da="Menneskelig godkendelse" data-en="Human approval">Menneskelig godkendelse</span>
+        <span data-da="Confidence scoring" data-en="Confidence scoring">Confidence scoring</span>
+        <span data-da="CVR & EAN" data-en="CVR & EAN">CVR & EAN</span>
+      </div>
 
-        <p class="subtitle"
-           data-en="FlowExtract converts e-mails, forms, chat messages and social requests into structured cases your team can review, approve and process."
-           data-da="FlowExtract omdanner e-mails, formularer, chatbeskeder og sociale henvendelser til strukturerede sager, som dit team kan gennemgå, godkende og behandle.">
-            FlowExtract omdanner e-mails, formularer, chatbeskeder og sociale henvendelser til strukturerede sager, som dit team kan gennemgå, godkende og behandle.
-        </p>
-
-        <div class="hero-actions">
-            <button type="button" class="button primary js-open-pilot"
-                    data-en="Request pilot access" data-da="Ansøg om pilotadgang">
-                Ansøg om pilotadgang
-            </button>
-            <a href="#screenshots" class="button secondary"
-               data-en="View platform preview" data-da="Se platform preview">
-                Se platform preview
-            </a>
-        </div>
+      <div class="hero-actions">
+        <button type="button" class="button primary js-open-pilot" data-da="Ansøg om pilotadgang" data-en="Request pilot access">Ansøg om pilotadgang</button>
+        <a href="#screenshots" class="button secondary" data-da="Se platform preview" data-en="View platform preview">Se platform preview</a>
+      </div>
     </section>
 
-    <section id="problem" class="content-section">
-        <div class="section-title">
-            <p class="eyebrow" data-en="The problem" data-da="Problemet">Problemet</p>
-            <h2 data-en="Your inbox is not a workflow system."
-                data-da="Din indbakke er ikke et workflow-system.">
-                Din indbakke er ikke et workflow-system.
-            </h2>
-            <p data-en="Customer communication often contains orders, changes, invoice data and missing information — but the work is still handled manually by reading, copying, checking and following up."
-               data-da="Kundekommunikation indeholder ofte ordrer, ændringer, fakturadata og manglende oplysninger — men arbejdet håndteres stadig manuelt med læsning, kopiering, tjek og opfølgning.">
-                Kundekommunikation indeholder ofte ordrer, ændringer, fakturadata og manglende oplysninger — men arbejdet håndteres stadig manuelt med læsning, kopiering, tjek og opfølgning.
-            </p>
-        </div>
+    <section id="problem" class="content-section section-shell">
+      <div class="section-title">
+        <p class="eyebrow" data-da="Problemet" data-en="The problem">Problemet</p>
+        <h2 data-da="Din indbakke er ikke et workflow-system." data-en="Your inbox is not a workflow system.">Din indbakke er ikke et workflow-system.</h2>
+        <p data-da="Kundekommunikation indeholder ofte ordrer, ændringer, fakturadata og manglende oplysninger — men arbejdet håndteres stadig manuelt med læsning, kopiering, tjek og opfølgning." data-en="Customer communication often contains orders, changes, invoice data and missing information — but the work is still handled manually by reading, copying, checking and following up.">Kundekommunikation indeholder ofte ordrer, ændringer, fakturadata og manglende oplysninger — men arbejdet håndteres stadig manuelt med læsning, kopiering, tjek og opfølgning.</p>
+      </div>
 
-        <div class="cards-grid three">
-            <div class="card small-card">
-                <h3 data-en="Messages come from everywhere" data-da="Beskeder kommer fra alle steder">Beskeder kommer fra alle steder</h3>
-                <p data-en="E-mail, Facebook, Messenger, forms and chat become separate mini-workflows."
-                   data-da="E-mail, Facebook, Messenger, formularer og chat bliver til separate mini-workflows.">
-                    E-mail, Facebook, Messenger, formularer og chat bliver til separate mini-workflows.
-                </p>
-            </div>
-            <div class="card small-card">
-                <h3 data-en="Important details are missed" data-da="Vigtige oplysninger overses">Vigtige oplysninger overses</h3>
-                <p data-en="Quantities, addresses, CVR, EAN, dates and payment details often require manual validation."
-                   data-da="Antal, adresser, CVR, EAN, datoer og betalingsoplysninger kræver ofte manuel validering.">
-                    Antal, adresser, CVR, EAN, datoer og betalingsoplysninger kræver ofte manuel validering.
-                </p>
-            </div>
-            <div class="card small-card">
-                <h3 data-en="Follow-up slows everything down" data-da="Opfølgning bremser processen">Opfølgning bremser processen</h3>
-                <p data-en="Incomplete requests create back-and-forth messages before the real work can continue."
-                   data-da="Ufuldstændige henvendelser skaber frem-og-tilbage beskeder, før arbejdet kan fortsætte.">
-                    Ufuldstændige henvendelser skaber frem-og-tilbage beskeder, før arbejdet kan fortsætte.
-                </p>
-            </div>
-        </div>
+      <div class="cards-grid three">
+        <article class="card compact">
+          <span class="card-icon">01</span>
+          <h3 data-da="Beskeder kommer fra alle steder" data-en="Messages come from everywhere">Beskeder kommer fra alle steder</h3>
+          <p data-da="E-mail, Facebook, Messenger, formularer og chat bliver til separate mini-workflows." data-en="Email, Facebook, Messenger, forms and chat become separate mini-workflows.">E-mail, Facebook, Messenger, formularer og chat bliver til separate mini-workflows.</p>
+        </article>
+        <article class="card compact">
+          <span class="card-icon">02</span>
+          <h3 data-da="Vigtige oplysninger overses" data-en="Important details are missed">Vigtige oplysninger overses</h3>
+          <p data-da="Antal, adresser, CVR, EAN, datoer og betalingsoplysninger kræver ofte manuel validering." data-en="Quantities, addresses, CVR, EAN, dates and payment details often require manual validation.">Antal, adresser, CVR, EAN, datoer og betalingsoplysninger kræver ofte manuel validering.</p>
+        </article>
+        <article class="card compact">
+          <span class="card-icon">03</span>
+          <h3 data-da="Opfølgning bremser processen" data-en="Follow-up slows everything down">Opfølgning bremser processen</h3>
+          <p data-da="Ufuldstændige henvendelser skaber frem-og-tilbage beskeder, før arbejdet kan fortsætte." data-en="Incomplete requests create back-and-forth messages before the real work can continue.">Ufuldstændige henvendelser skaber frem-og-tilbage beskeder, før arbejdet kan fortsætte.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="features" class="content-section">
-        <div class="section-title">
-            <p class="eyebrow" data-en="Core features" data-da="Kernefunktioner">Kernefunktioner</p>
-            <h2 data-en="From message to reviewed case."
-                data-da="Fra besked til gennemgået sag.">Fra besked til gennemgået sag.</h2>
-        </div>
-        <div class="cards-grid four">
-            <div class="card">
-                <h3 data-en="Multi-channel intake" data-da="Indsamling fra flere kanaler">Indsamling fra flere kanaler</h3>
-                <p data-en="E-mail, Messenger, Facebook comments, forms and chat."
-                   data-da="E-mail, Messenger, Facebook-kommentarer, formularer og chat.">E-mail, Messenger, Facebook-kommentarer, formularer og chat.</p>
-            </div>
-            <div class="card">
-                <h3 data-en="AI extraction" data-da="AI-ekstraktion">AI-ekstraktion</h3>
-                <p data-en="Identify products, quantities, customer data, invoice details, intent and next actions."
-                   data-da="Identificér produkter, antal, kundedata, fakturaoplysninger, intention og næste handlinger.">Identificér produkter, antal, kundedata, fakturaoplysninger, intention og næste handlinger.</p>
-            </div>
-            <div class="card">
-                <h3 data-en="Human review" data-da="Menneskelig gennemgang">Menneskelig gennemgang</h3>
-                <p data-en="Confidence scoring, approval queues, validation flags and audit trails before action."
-                   data-da="Confidence scoring, godkendelseskøer, valideringsflag og audit trail før handling.">Confidence scoring, godkendelseskøer, valideringsflag og audit trail før handling.</p>
-            </div>
-            <div class="card">
-                <h3 data-en="Invoice context" data-da="Faktura og betaling">Faktura og betaling</h3>
-                <p data-en="Support for private payments, company invoices, CVR, EAN, references and payment states."
-                   data-da="Understøtter privatbetalinger, virksomhedsbetalinger, CVR, EAN, referencer og betalingsstatus.">Understøtter privatbetalinger, virksomhedsbetalinger, CVR, EAN, referencer og betalingsstatus.</p>
-            </div>
-        </div>
+    <section id="features" class="content-section section-shell">
+      <div class="section-title">
+        <p class="eyebrow" data-da="Kernefunktioner" data-en="Core features">Kernefunktioner</p>
+        <h2 data-da="Fra besked til gennemgået sag." data-en="From message to reviewed case.">Fra besked til gennemgået sag.</h2>
+      </div>
+      <div class="cards-grid four">
+        <article class="card"><h3 data-da="Indsamling fra flere kanaler" data-en="Multi-channel intake">Indsamling fra flere kanaler</h3><p data-da="E-mail, Messenger, Facebook-kommentarer, formularer og chat." data-en="Email, Messenger, Facebook comments, forms and chat.">E-mail, Messenger, Facebook-kommentarer, formularer og chat.</p></article>
+        <article class="card"><h3 data-da="AI-ekstraktion" data-en="AI extraction">AI-ekstraktion</h3><p data-da="Identificér produkter, antal, kundedata, fakturaoplysninger, intention og næste handlinger." data-en="Identify products, quantities, customer data, invoice details, intent and next actions.">Identificér produkter, antal, kundedata, fakturaoplysninger, intention og næste handlinger.</p></article>
+        <article class="card"><h3 data-da="Menneskelig gennemgang" data-en="Human review">Menneskelig gennemgang</h3><p data-da="Confidence scoring, godkendelseskøer, valideringsflag og audit trail før handling." data-en="Confidence scoring, approval queues, validation flags and audit trails before action.">Confidence scoring, godkendelseskøer, valideringsflag og audit trail før handling.</p></article>
+        <article class="card"><h3 data-da="Faktura og betaling" data-en="Invoice context">Faktura og betaling</h3><p data-da="Understøtter privatbetalinger, virksomhedsbetalinger, CVR, EAN, referencer og betalingsstatus." data-en="Supports private payments, company invoices, CVR, EAN, references and payment states.">Understøtter privatbetalinger, virksomhedsbetalinger, CVR, EAN, referencer og betalingsstatus.</p></article>
+      </div>
     </section>
 
-    <section id="screenshots" class="screenshots-section">
-        <div class="section-title">
-            <p class="eyebrow" data-en="Platform preview" data-da="Platform preview">Platform preview</p>
-            <h2 data-en="Designed for operational clarity."
-                data-da="Designet til operationelt overblik.">Designet til operationelt overblik.</h2>
-        </div>
-        <div class="screenshots-grid">
-            <div class="shot">
-                <img src="dashboard-preview.png" alt="FlowExtract dashboard preview" />
-                <div class="shot-content">
-                    <h3 data-en="Operational dashboard" data-da="Operationelt dashboard">Operationelt dashboard</h3>
-                    <p data-en="Review incoming cases, approval queues, extraction confidence and workflow states."
-                       data-da="Gennemgå indgående sager, godkendelseskøer, confidence score og workflow-status.">Gennemgå indgående sager, godkendelseskøer, confidence score og workflow-status.</p>
-                </div>
-            </div>
-            <div class="shot">
-                <img src="extraction-preview.png" alt="FlowExtract extraction preview" />
-                <div class="shot-content">
-                    <h3 data-en="AI extraction review" data-da="AI-gennemgang af data">AI-gennemgang af data</h3>
-                    <p data-en="Check what FlowExtract found, correct uncertain fields and decide the next action."
-                       data-da="Tjek hvad FlowExtract har fundet, ret usikre felter og beslut næste handling.">Tjek hvad FlowExtract har fundet, ret usikre felter og beslut næste handling.</p>
-                </div>
-            </div>
-        </div>
+    <section id="screenshots" class="screenshots-section section-shell">
+      <div class="section-title">
+        <p class="eyebrow" data-da="Platform preview" data-en="Platform preview">Platform preview</p>
+        <h2 data-da="Designet til operationelt overblik." data-en="Designed for operational clarity.">Designet til operationelt overblik.</h2>
+      </div>
+      <div class="screenshots-grid">
+        <article class="shot"><img src="dashboard-preview.png" alt="FlowExtract dashboard preview" /><div class="shot-content"><h3 data-da="Operationelt dashboard" data-en="Operational dashboard">Operationelt dashboard</h3><p data-da="Gennemgå indgående sager, godkendelseskøer, confidence score og workflow-status." data-en="Review incoming cases, approval queues, extraction confidence and workflow states.">Gennemgå indgående sager, godkendelseskøer, confidence score og workflow-status.</p></div></article>
+        <article class="shot"><img src="extraction-preview.png" alt="FlowExtract extraction review preview" /><div class="shot-content"><h3 data-da="AI-gennemgang af data" data-en="AI extraction review">AI-gennemgang af data</h3><p data-da="Tjek hvad FlowExtract har fundet, ret usikre felter og beslut næste handling." data-en="Check what FlowExtract found, correct uncertain fields and decide the next action.">Tjek hvad FlowExtract har fundet, ret usikre felter og beslut næste handling.</p></div></article>
+      </div>
     </section>
 
-    <section id="workflow" class="workflow">
-        <p class="eyebrow" data-en="How it works" data-da="Hvordan det virker">Hvordan det virker</p>
-        <h2 data-en="From unstructured message to operational action."
-            data-da="Fra ustruktureret besked til operationel handling.">Fra ustruktureret besked til operationel handling.</h2>
-        <div class="steps">
-            <div class="step"><span>1</span><h3 data-en="Capture" data-da="Modtag">Modtag</h3><p data-en="Receive customer communication." data-da="Modtag kundekommunikation.">Modtag kundekommunikation.</p></div>
-            <div class="step"><span>2</span><h3 data-en="Extract" data-da="Udtræk">Udtræk</h3><p data-en="AI identifies fields, intent and confidence." data-da="AI identificerer felter, intention og confidence.">AI identificerer felter, intention og confidence.</p></div>
-            <div class="step"><span>3</span><h3 data-en="Review" data-da="Gennemgå">Gennemgå</h3><p data-en="Humans approve or correct extracted data." data-da="Mennesker godkender eller retter data.">Mennesker godkender eller retter data.</p></div>
-            <div class="step"><span>4</span><h3 data-en="Process" data-da="Behandl">Behandl</h3><p data-en="Move approved cases into operational workflows." data-da="Send godkendte sager videre i driften.">Send godkendte sager videre i driften.</p></div>
-        </div>
+    <section id="workflow" class="workflow section-shell">
+      <p class="eyebrow" data-da="Hvordan det virker" data-en="How it works">Hvordan det virker</p>
+      <h2 data-da="Fra ustruktureret besked til operationel handling." data-en="From unstructured message to operational action.">Fra ustruktureret besked til operationel handling.</h2>
+      <div class="steps">
+        <article class="step"><span>1</span><h3 data-da="Modtag" data-en="Capture">Modtag</h3><p data-da="Indsaml kundehenvendelser fra e-mail, formularer og sociale kanaler." data-en="Capture customer communication from email, forms and social channels.">Indsaml kundehenvendelser fra e-mail, formularer og sociale kanaler.</p></article>
+        <article class="step"><span>2</span><h3 data-da="Udtræk" data-en="Extract">Udtræk</h3><p data-da="AI finder felter, intention, mangler og foreslåede handlinger." data-en="AI identifies fields, intent, missing information and suggested actions.">AI finder felter, intention, mangler og foreslåede handlinger.</p></article>
+        <article class="step"><span>3</span><h3 data-da="Gennemgå" data-en="Review">Gennemgå</h3><p data-da="Dit team godkender, retter eller afviser før noget udføres." data-en="Your team approves, corrects or rejects before anything executes.">Dit team godkender, retter eller afviser før noget udføres.</p></article>
+        <article class="step"><span>4</span><h3 data-da="Behandl" data-en="Process">Behandl</h3><p data-da="Send strukturerede data videre til ordre-, CRM- eller fakturaworkflows." data-en="Push structured data into order, CRM or invoicing workflows.">Send strukturerede data videre til ordre-, CRM- eller fakturaworkflows.</p></article>
+      </div>
     </section>
 
-    <section class="content-section trust-section">
-        <div class="section-title">
-            <p class="eyebrow" data-en="Why FlowExtract" data-da="Hvorfor FlowExtract">Hvorfor FlowExtract</p>
-            <h2 data-en="Automation with operational control."
-                data-da="Automatisering med operationel kontrol.">Automatisering med operationel kontrol.</h2>
-        </div>
-        <div class="trust-grid">
-            <div data-en="Human approval before actions are executed" data-da="Menneskelig godkendelse før handlinger udføres">Menneskelig godkendelse før handlinger udføres</div>
-            <div data-en="Confidence scoring on every extraction" data-da="Confidence scoring på hver udtrækning">Confidence scoring på hver udtrækning</div>
-            <div data-en="Audit trail for decisions and corrections" data-da="Audit trail for beslutninger og rettelser">Audit trail for beslutninger og rettelser</div>
-            <div data-en="Built around Danish business workflows" data-da="Bygget omkring danske virksomheds-workflows">Bygget omkring danske virksomheds-workflows</div>
-            <div data-en="Supports CVR, EAN and invoice routing" data-da="Understøtter CVR, EAN og fakturarouting">Understøtter CVR, EAN og fakturarouting</div>
-            <div data-en="Designed for operations across channels" data-da="Designet til drift på tværs af kanaler">Designet til drift på tværs af kanaler</div>
-        </div>
+    <section class="content-section section-shell">
+      <div class="section-title">
+        <p class="eyebrow" data-da="Hvorfor FlowExtract" data-en="Why FlowExtract">Hvorfor FlowExtract</p>
+        <h2 data-da="Automatisering med kontrol." data-en="Automation with operational control.">Automatisering med kontrol.</h2>
+      </div>
+      <div class="trust-grid">
+        <div data-da="Menneskelig godkendelse før handlinger udføres" data-en="Human approval before actions execute">Menneskelig godkendelse før handlinger udføres</div>
+        <div data-da="Confidence scoring på hver udtrækning" data-en="Confidence scoring on every extraction">Confidence scoring på hver udtrækning</div>
+        <div data-da="Audit trail for beslutninger og rettelser" data-en="Audit trail for decisions and corrections">Audit trail for beslutninger og rettelser</div>
+        <div data-da="Bygget omkring danske virksomhedsworkflows" data-en="Built around Danish business workflows">Bygget omkring danske virksomhedsworkflows</div>
+        <div data-da="Understøtter CVR, EAN og fakturarouting" data-en="Supports CVR, EAN and invoice routing">Understøtter CVR, EAN og fakturarouting</div>
+        <div data-da="Designet til drift på tværs af kanaler" data-en="Designed for operations across channels">Designet til drift på tværs af kanaler</div>
+      </div>
     </section>
 
-    <section id="pilot" class="pilot">
-        <p class="eyebrow" data-en="Pilot program" data-da="Pilotprogram">Pilotprogram</p>
-        <h2 data-en="Become a FlowExtract launch partner."
-            data-da="Bliv FlowExtract launch partner.">Bliv FlowExtract launch partner.</h2>
-        <p data-en="FlowExtract is onboarding Danish businesses with repetitive customer communication, orders and invoice-related workflows."
-           data-da="FlowExtract onboarder danske virksomheder med gentagne kundehenvendelser, ordrer og fakturarelaterede workflows.">FlowExtract onboarder danske virksomheder med gentagne kundehenvendelser, ordrer og fakturarelaterede workflows.</p>
-        <button type="button" class="button primary js-open-pilot"
-                data-en="Request pilot access" data-da="Ansøg om pilotadgang">Ansøg om pilotadgang</button>
+    <section id="pilot" class="pilot section-shell">
+      <p class="eyebrow" data-da="Pilotprogram" data-en="Pilot program">Pilotprogram</p>
+      <h2 data-da="Bliv FlowExtract launch partner." data-en="Become a FlowExtract launch partner.">Bliv FlowExtract launch partner.</h2>
+      <p data-da="FlowExtract onboarder danske virksomheder med gentagne kundehenvendelser, ordrer og fakturarelaterede workflows." data-en="FlowExtract is onboarding Danish businesses with repetitive customer communication, orders and invoice-related workflows.">FlowExtract onboarder danske virksomheder med gentagne kundehenvendelser, ordrer og fakturarelaterede workflows.</p>
+      <button type="button" class="button primary js-open-pilot" data-da="Ansøg om pilotadgang" data-en="Request pilot access">Ansøg om pilotadgang</button>
     </section>
-</main>
+  </main>
 
-<footer class="footer">
+  <footer class="footer">
     <strong>FlowExtract</strong>
-    <span data-en="AI-powered operational workflow infrastructure for SMBs."
-          data-da="AI-drevet operationel workflow-infrastruktur til SMV’er.">AI-drevet operationel workflow-infrastruktur til SMV’er.</span>
+    <span data-da="AI-drevet operationel workflow-infrastruktur til SMV’er." data-en="AI-powered operational workflow infrastructure for SMBs.">AI-drevet operationel workflow-infrastruktur til SMV’er.</span>
     <a href="mailto:contact@flowextract.dk">contact@flowextract.dk</a>
-</footer>
+  </footer>
 
-<div class="modal-backdrop" id="pilotModal" aria-hidden="true">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pilotModalTitle">
-        <button type="button" class="modal-close" onclick="closePilotModal()" aria-label="Close">×</button>
-        <div class="modal-header">
-            <p class="eyebrow" data-en="Pilot access" data-da="Pilotadgang">Pilotadgang</p>
-            <h2 id="pilotModalTitle" data-en="Apply for FlowExtract pilot access" data-da="Ansøg om FlowExtract pilotadgang">Ansøg om FlowExtract pilotadgang</h2>
-            <p data-en="Tell us shortly about your company and the workflows you want to improve."
-               data-da="Fortæl kort om din virksomhed og de workflows, du vil forbedre.">Fortæl kort om din virksomhed og de workflows, du vil forbedre.</p>
-        </div>
-
-        <form id="pilotForm" class="pilot-form">
-            <div class="form-grid">
-                <label><span data-en="Name" data-da="Navn">Navn</span><input name="name" required /></label>
-                <label><span data-en="Company" data-da="Virksomhed">Virksomhed</span><input name="company" required /></label>
-                <label><span data-en="E-mail" data-da="E-mail">E-mail</span><input name="email" type="email" required /></label>
-                <label><span data-en="Phone" data-da="Telefon">Telefon</span><input name="phone" /></label>
-                <label><span data-en="Website" data-da="Website">Website</span><input name="website" /></label>
-                <label><span data-en="Monthly messages" data-da="Henvendelser pr. måned">Henvendelser pr. måned</span>
-                    <select name="volume">
-                        <option value="Unknown / Not sure">Unknown / Not sure</option>
-                        <option value="0-50">0-50</option>
-                        <option value="50-200">50-200</option>
-                        <option value="200-1000">200-1000</option>
-                        <option value="1000+">1000+</option>
-                    </select>
-                </label>
-                <label class="full"><span data-en="Channels" data-da="Kanaler">Kanaler</span><input name="channels" placeholder="E-mail, Messenger, Facebook, forms..." /></label>
-                <label class="full"><span data-en="Which workflow hurts most?" data-da="Hvilket workflow gør mest ondt?">Hvilket workflow gør mest ondt?</span><textarea name="pain" rows="4" placeholder="Orders, invoice details, missing information, support requests..."></textarea></label>
-                <label class="full"><span data-en="Extra notes" data-da="Ekstra noter">Ekstra noter</span><textarea name="notes" rows="3"></textarea></label>
-            </div>
-            <div class="form-status" id="formStatus" aria-live="polite"></div>
-            <div class="modal-actions">
-                <button type="button" class="button secondary" onclick="closePilotModal()" data-en="Cancel" data-da="Annuller">Annuller</button>
-                <button type="submit" class="button primary" data-en="Send application" data-da="Send ansøgning">Send ansøgning</button>
-            </div>
-        </form>
+  <dialog id="pilotDialog" class="pilot-dialog" aria-labelledby="pilotDialogTitle">
+    <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close">×</button></form>
+    <div class="modal-header">
+      <p class="eyebrow" data-da="Pilotadgang" data-en="Pilot access">Pilotadgang</p>
+      <h2 id="pilotDialogTitle" data-da="Ansøg om FlowExtract pilotadgang" data-en="Apply for FlowExtract pilot access">Ansøg om FlowExtract pilotadgang</h2>
+      <p data-da="Fortæl kort om din virksomhed og de workflows, du vil forbedre." data-en="Tell us shortly about your company and the workflows you want to improve.">Fortæl kort om din virksomhed og de workflows, du vil forbedre.</p>
     </div>
-</div>
 
-<script>
-const translations = {
-    da: {
-        success: "Tak — din ansøgning er sendt. Vi kontakter dig snarest.",
-        sending: "Sender...",
-        error: "Der skete en fejl. Prøv igen eller skriv til contact@flowextract.dk."
-    },
-    en: {
-        success: "Thanks — your application has been sent. We will contact you shortly.",
-        sending: "Sending...",
-        error: "Something went wrong. Try again or write to contact@flowextract.dk."
-    }
-};
+    <form id="pilotForm" class="pilot-form">
+      <div class="form-grid">
+        <label><span data-da="Navn" data-en="Name">Navn</span><input name="name" autocomplete="name" required /></label>
+        <label><span data-da="Virksomhed" data-en="Company">Virksomhed</span><input name="company" autocomplete="organization" required /></label>
+        <label><span data-da="E-mail" data-en="Email">E-mail</span><input name="email" type="email" autocomplete="email" required /></label>
+        <label><span data-da="Telefon" data-en="Phone">Telefon</span><input name="phone" autocomplete="tel" /></label>
+        <label><span data-da="Website" data-en="Website">Website</span><input name="website" autocomplete="url" /></label>
+        <label><span data-da="Henvendelser pr. måned" data-en="Monthly messages">Henvendelser pr. måned</span><select name="volume"><option value="Unknown / Not sure">Unknown / Not sure</option><option value="0-50">0-50</option><option value="50-200">50-200</option><option value="200-1000">200-1000</option><option value="1000+">1000+</option></select></label>
+        <label class="full"><span data-da="Kanaler" data-en="Channels">Kanaler</span><input name="channels" placeholder="E-mail, Messenger, Facebook, formularer..." /></label>
+        <label class="full"><span data-da="Hvilket workflow gør mest ondt?" data-en="Which workflow hurts most?">Hvilket workflow gør mest ondt?</span><textarea name="pain" rows="4" placeholder="Ordrer, fakturaoplysninger, manglende data, support..." required></textarea></label>
+        <label class="full"><span data-da="Ekstra noter" data-en="Extra notes">Ekstra noter</span><textarea name="notes" rows="3"></textarea></label>
+      </div>
+      <div class="form-status" id="formStatus" aria-live="polite"></div>
+      <div class="modal-actions">
+        <button type="button" class="button secondary" id="cancelPilot" data-da="Annuller" data-en="Cancel">Annuller</button>
+        <button type="submit" class="button primary" data-da="Send ansøgning" data-en="Send application">Send ansøgning</button>
+      </div>
+    </form>
+  </dialog>
 
-function setLanguage(lang) {
-    localStorage.setItem("language", lang);
-    document.documentElement.lang = lang;
-    document.querySelectorAll("[data-en]").forEach(el => {
+  <script>
+    const translations = {
+      da: { success: "Tak — din ansøgning er sendt. Vi kontakter dig snarest.", sending: "Sender...", error: "Der skete en fejl. Prøv igen eller skriv til contact@flowextract.dk." },
+      en: { success: "Thanks — your application has been sent. We will contact you shortly.", sending: "Sending...", error: "Something went wrong. Try again or write to contact@flowextract.dk." }
+    };
+
+    function currentLanguage() { return localStorage.getItem("language") || "da"; }
+
+    function setLanguage(lang) {
+      localStorage.setItem("language", lang);
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-da][data-en]").forEach(el => {
         el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    const dialog = document.getElementById("pilotDialog");
+    const openButtons = document.querySelectorAll(".js-open-pilot");
+    const cancelButton = document.getElementById("cancelPilot");
+
+    openButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+          setTimeout(() => dialog.querySelector("input[name='name']")?.focus(), 60);
+        }
+      });
     });
-}
 
-function currentLanguage() {
-    return localStorage.getItem("language") || "da";
-}
+    cancelButton.addEventListener("click", () => dialog.close());
 
-function openPilotModal() {
-    const modal = document.getElementById("pilotModal");
-    modal.classList.add("is-open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.classList.add("modal-open");
-    setTimeout(() => modal.querySelector("input[name='name']")?.focus(), 50);
-}
+    dialog.addEventListener("click", event => {
+      const rect = dialog.getBoundingClientRect();
+      const clickedOutside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+      if (clickedOutside) dialog.close();
+    });
 
-function closePilotModal() {
-    const modal = document.getElementById("pilotModal");
-    modal.classList.remove("is-open");
-    modal.setAttribute("aria-hidden", "true");
-    document.body.classList.remove("modal-open");
-}
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.addEventListener("click", () => setLanguage(btn.dataset.langBtn));
+    });
 
-document.querySelectorAll(".js-open-pilot").forEach(button => {
-    button.addEventListener("click", openPilotModal);
-});
+    document.getElementById("pilotForm").addEventListener("submit", async event => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const status = document.getElementById("formStatus");
+      const submitButton = form.querySelector("button[type='submit']");
+      const lang = currentLanguage();
+      status.textContent = translations[lang].sending;
+      status.className = "form-status";
+      submitButton.disabled = true;
 
-document.getElementById("pilotModal").addEventListener("click", event => {
-    if (event.target.id === "pilotModal") closePilotModal();
-});
-
-document.addEventListener("keydown", event => {
-    if (event.key === "Escape") closePilotModal();
-});
-
-document.getElementById("pilotForm").addEventListener("submit", async event => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const status = document.getElementById("formStatus");
-    const submitButton = form.querySelector("button[type='submit']");
-    const lang = currentLanguage();
-
-    status.textContent = translations[lang].sending;
-    status.className = "form-status";
-    submitButton.disabled = true;
-
-    const payload = Object.fromEntries(new FormData(form).entries());
-
-    try {
+      try {
+        const payload = Object.fromEntries(new FormData(form).entries());
         const response = await fetch("/api/pilot-request", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload)
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
         });
-
         if (!response.ok) throw new Error("Request failed");
-
         form.reset();
         status.textContent = translations[lang].success;
         status.className = "form-status success";
-    } catch (error) {
+      } catch (error) {
         status.textContent = translations[lang].error;
         status.className = "form-status error";
-    } finally {
+      } finally {
         submitButton.disabled = false;
-    }
-});
+      }
+    });
 
-setLanguage(currentLanguage());
-</script>
+    setLanguage(currentLanguage());
+  </script>
 </body>
 </html>
